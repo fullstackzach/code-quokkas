@@ -1,4 +1,13 @@
 
+/*
+Given a string with any number of open/closed parenthesis, return true if the parenthesis are well-formed, false otherwise.
+(x+2)*(x-4) === true
+(x+2))*(x-4) === false
+(()) === true
+((()) === false
+*/
+
+// Solution
 const isBalanced = string => {
   const arr = string.split('')
   if (arr.length === 0) {
